@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED2EE4B5159667470055206F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4B4159667470055206F /* UIKit.framework */; };
+		ED2EE4B7159667470055206F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4B6159667470055206F /* Foundation.framework */; };
+		ED2EE4B9159667470055206F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4B8159667470055206F /* CoreGraphics.framework */; };
+		ED2EE4BF159667470055206F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4BD159667470055206F /* InfoPlist.strings */; };
+		ED2EE4C1159667470055206F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4C0159667470055206F /* main.m */; };
+		ED2EE4C5159667470055206F /* ruckusAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4C4159667470055206F /* ruckusAppDelegate.m */; };
+		ED2EE4C8159667470055206F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4C6159667470055206F /* MainWindow.xib */; };
+		ED2EE4CB159667470055206F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4CA159667470055206F /* RootViewController.m */; };
+		ED2EE4CE159667470055206F /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4CC159667470055206F /* RootViewController.xib */; };
+		ED2EE4D51596705E0055206F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4D41596705E0055206F /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED2EE4B0159667470055206F /* ruckus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ruckus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2EE4B4159667470055206F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ED2EE4B6159667470055206F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ED2EE4B8159667470055206F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ED2EE4BC159667470055206F /* ruckus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ruckus-Info.plist"; sourceTree = "<group>"; };
+		ED2EE4BE159667470055206F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ED2EE4C0159667470055206F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED2EE4C2159667470055206F /* ruckus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ruckus-Prefix.pch"; sourceTree = "<group>"; };
+		ED2EE4C3159667470055206F /* ruckusAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ruckusAppDelegate.h; sourceTree = "<group>"; };
+		ED2EE4C4159667470055206F /* ruckusAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ruckusAppDelegate.m; sourceTree = "<group>"; };
+		ED2EE4C7159667470055206F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		ED2EE4C9159667470055206F /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		ED2EE4CA159667470055206F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		ED2EE4CD159667470055206F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		ED2EE4D41596705E0055206F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED2EE4AD159667470055206F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2EE4D51596705E0055206F /* AVFoundation.framework in Frameworks */,
+				ED2EE4B5159667470055206F /* UIKit.framework in Frameworks */,
+				ED2EE4B7159667470055206F /* Foundation.framework in Frameworks */,
+				ED2EE4B9159667470055206F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED2EE4A5159667470055206F = {
+			isa = PBXGroup;
+			children = (
+				ED2EE4D41596705E0055206F /* AVFoundation.framework */,
+				ED2EE4BA159667470055206F /* ruckus */,
+				ED2EE4B3159667470055206F /* Frameworks */,
+				ED2EE4B1159667470055206F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED2EE4B1159667470055206F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE4B0159667470055206F /* ruckus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED2EE4B3159667470055206F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE4B4159667470055206F /* UIKit.framework */,
+				ED2EE4B6159667470055206F /* Foundation.framework */,
+				ED2EE4B8159667470055206F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED2EE4BA159667470055206F /* ruckus */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE4C3159667470055206F /* ruckusAppDelegate.h */,
+				ED2EE4C4159667470055206F /* ruckusAppDelegate.m */,
+				ED2EE4C6159667470055206F /* MainWindow.xib */,
+				ED2EE4C9159667470055206F /* RootViewController.h */,
+				ED2EE4CA159667470055206F /* RootViewController.m */,
+				ED2EE4CC159667470055206F /* RootViewController.xib */,
+				ED2EE4BB159667470055206F /* Supporting Files */,
+			);
+			path = ruckus;
+			sourceTree = "<group>";
+		};
+		ED2EE4BB159667470055206F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE4BC159667470055206F /* ruckus-Info.plist */,
+				ED2EE4BD159667470055206F /* InfoPlist.strings */,
+				ED2EE4C0159667470055206F /* main.m */,
+				ED2EE4C2159667470055206F /* ruckus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED2EE4AF159667470055206F /* ruckus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED2EE4D1159667470055206F /* Build configuration list for PBXNativeTarget "ruckus" */;
+			buildPhases = (
+				ED2EE4AC159667470055206F /* Sources */,
+				ED2EE4AD159667470055206F /* Frameworks */,
+				ED2EE4AE159667470055206F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ruckus;
+			productName = ruckus;
+			productReference = ED2EE4B0159667470055206F /* ruckus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED2EE4A7159667470055206F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Momentus Media";
+			};
+			buildConfigurationList = ED2EE4AA159667470055206F /* Build configuration list for PBXProject "ruckus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ED2EE4A5159667470055206F;
+			productRefGroup = ED2EE4B1159667470055206F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED2EE4AF159667470055206F /* ruckus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED2EE4AE159667470055206F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2EE4BF159667470055206F /* InfoPlist.strings in Resources */,
+				ED2EE4C8159667470055206F /* MainWindow.xib in Resources */,
+				ED2EE4CE159667470055206F /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED2EE4AC159667470055206F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2EE4C1159667470055206F /* main.m in Sources */,
+				ED2EE4C5159667470055206F /* ruckusAppDelegate.m in Sources */,
+				ED2EE4CB159667470055206F /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED2EE4BD159667470055206F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED2EE4BE159667470055206F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ED2EE4C6159667470055206F /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED2EE4C7159667470055206F /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		ED2EE4CC159667470055206F /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED2EE4CD159667470055206F /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED2EE4CF159667470055206F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ED2EE4D0159667470055206F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED2EE4D2159667470055206F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ruckus/ruckus-Prefix.pch";
+				INFOPLIST_FILE = "ruckus/ruckus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ED2EE4D3159667470055206F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ruckus/ruckus-Prefix.pch";
+				INFOPLIST_FILE = "ruckus/ruckus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED2EE4AA159667470055206F /* Build configuration list for PBXProject "ruckus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2EE4CF159667470055206F /* Debug */,
+				ED2EE4D0159667470055206F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED2EE4D1159667470055206F /* Build configuration list for PBXNativeTarget "ruckus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2EE4D2159667470055206F /* Debug */,
+				ED2EE4D3159667470055206F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED2EE4A7159667470055206F /* Project object */;
+}
