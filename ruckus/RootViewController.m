@@ -100,11 +100,7 @@
    
     TimerUpdate = [NSTimer scheduledTimerWithTimeInterval:.2 
                                                             target:self selector:@selector(timerTask) userInfo:nil repeats:YES];
-    self.speaker.animationImages = self.animationArray;
-//    self.speaker.animationDuration = 3.0; // seconds
-//    self.speaker.animationRepeatCount = 10;
-    [self.speaker setAnimationRepeatCount:3];
-    [self.speaker startAnimating];
+
     
 }
 
@@ -124,15 +120,43 @@
 
 - (void) timerTask {
     [audioRecorder updateMeters];
-    float level = [audioRecorder peakPowerForChannel:0] + 160; // offset
-    totalDecibels += level;
-    decibelLevel.text = [NSString stringWithFormat:@"%d",totalDecibels];
-    NSLog(@"%f", level);
+    float level = [audioRecorder peakPowerForChannel:0];
+    
+    level += 160;
+//    NSLog(@"level: %f",level);
+    float db;
+    if(level > 0){
+    
+        db = log10(level);
+    } else {
+        db = 0;
+    }
+//    NSLog(@"db: %f",db);
+    
+    
+    /* show correct image */
+    int image_num = lroundf(db *2);
+//    NSLog(@"image_num %d",image_num);
+
+    
+//    NSLog(@"d: %d",image_num);
+    if(image_num > 3){
+        image_num = 3;
+    }
+    if(image_num < 0){
+        image_num = 0;
+    }
+    self.speaker.image = [animationArray objectAtIndex:image_num];
+    
+    /* add to total */
+    totalDecibels += db;
+
+ //   NSLog(@"%f", db);
+
     if(!audioRecorder.recording)
     {
         [TimerUpdate invalidate];
 //        TimerUpdate = nil;   
-        [self.speaker stopAnimating];
         [self submitWeight];
     }
 }

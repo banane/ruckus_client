@@ -16,7 +16,7 @@
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
-@synthesize uid,reactionsDict,team,currDate,topReactionsDict,selectedHead;
+@synthesize uid,reactionsDict,team,currDate,topReactionsDict,selectedHead,gameDict,inning;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -124,9 +124,9 @@
 -(void)getTopReactions{
     // DEFAULT VALUES
 //    GET /<date>/<team>/top?inning=<inning>&number=<number of winners desired>&whose=<mine, theirs, or both>  
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/%@/top?inning=&number=3&whose=",HEROKU_URL,self.currDate, self.team]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/%@/top?number=3",HEROKU_URL,self.currDate, self.team]];
     
-    NSLog(@"the url: %@",url);
+    NSLog(@"in get top reactions the url: %@",url);
     
     NSURLResponse *response;
     NSError *error;
@@ -141,7 +141,32 @@
     NSString *responseDataString = (NSString *)[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
     NSLog(@"datastring: %@",responseDataString);
     self.topReactionsDict = (NSDictionary *)[responseData objectFromJSONData];
-    NSLog(@"reactions dict: %@", self.reactionsDict);   
+    NSLog(@"topreactions dict: %@", self.topReactionsDict);   
+}
+
+
+-(void)getGameInfo{
+    // DEFAULT VALUES
+    //    GET /<date>/<team>/top?inning=<inning>&number=<number of winners desired>&whose=<mine, theirs, or both>  
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/%@/gameinfo/",HEROKU_URL,self.currDate, self.team]];
+    
+    NSLog(@"in get game info the url: %@",url);
+    
+    NSURLResponse *response;
+    NSError *error;
+    
+    NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:url 
+                                                         cachePolicy:NSURLRequestReloadIgnoringCacheData    
+                                                     timeoutInterval:30];
+    
+    [request setHTTPMethod:@"GET"]; 
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    
+    NSString *responseDataString = (NSString *)[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    NSLog(@"datastring: %@",responseDataString);
+    self.gameDict = (NSDictionary *)[responseData objectFromJSONData];
+    NSLog(@"game dict: %@", self.gameDict);   
+    self.inning = [self.gameDict objectForKey:@"current_inning"];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -185,6 +210,7 @@
     [reactionsDict release];
     [topReactionsDict release];
     [selectedHead release];
+    [gameDict  release];
     [super dealloc];
 }
 

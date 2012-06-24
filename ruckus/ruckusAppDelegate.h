@@ -15,6 +15,8 @@
     NSString *team;
     NSDictionary *topReactionsDict;
     UIImage *selectedHead;
+    NSDictionary *gameDict;
+    NSString *inning;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -27,10 +29,13 @@
 @property (nonatomic, retain) NSString *team;
 @property (nonatomic, retain) NSDictionary *topReactionsDict;
 @property (nonatomic, retain) UIImage *selectedHead;
+@property (nonatomic, retain) NSDictionary *gameDict;
+@property (nonatomic, retain) NSString *inning;
 
 -(void)doShoutUpload:(NSString *)shoutString;
 -(void)getReactionsLurk;
 -(void)doUpVotePost:(NSString *)reaction_id;
 -(void)getTopReactions;
+-(void)getGameInfo;
     
 @end

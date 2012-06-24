@@ -9,6 +9,7 @@
 #import "game.h"
 #import "shout.h"
 #import "ruckusAppDelegate.h"
+#import "RootViewController.h"
 
 @implementation game
 @synthesize gameInfo;
@@ -56,14 +57,17 @@
 
     // set skins
     /// change before going live
-    NSArray *teams = [[NSArray alloc] initWithObjects:@"nyn",@"nya",nil];
+    NSArray *teams = [[NSArray alloc] initWithObjects:@"min",@"cin",nil];
     app.team = [teams objectAtIndex:[sender tag]];
-    if([app.team isEqualToString:@"nyn"]){
+    if([app.team isEqualToString:@"min"]){
         app.selectedHead = [UIImage imageNamed:@"mets_head.png"];
     }
-    if([app.team isEqualToString:@"nya"]){
+    if([app.team isEqualToString:@"cin"]){
         app.selectedHead = [UIImage imageNamed:@"yankees_head.png"];
     }
+    [app getGameInfo];
+    /* for debugging */
+        
     
     shout *sh = [[shout alloc] initWithNibName:@"shout" bundle:nil];
     [[self navigationController] pushViewController:sh animated:YES];

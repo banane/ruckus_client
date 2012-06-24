@@ -24,4 +24,5 @@
 @property (nonatomic, retain) IBOutlet UIImageView *head;
 @property (nonatomic, retain) IBOutlet UILabel *inning;
 
+-(IBAction)viewSpirits;
 @end

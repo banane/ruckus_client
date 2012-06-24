@@ -12,7 +12,7 @@
 #import "ruckusAppDelegate.h"
 
 @implementation shout
-@synthesize tf,head,gameInfoTV;
+@synthesize tf,head,gameInfoTV,inningL,battingL,pitcherL,playTV,scoreL;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,7 +50,7 @@
 -(IBAction)seeTopShouts{
     // send lurk
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [app getReactionsLurk]; // lurk
+    [app getTopReactions]; // lurk
     
     topShoutsAll *ts = [[topShoutsAll alloc] initWithNibName:@"topShoutsAll" bundle:nil];
     [[self navigationController] pushViewController:ts animated:YES];
@@ -84,8 +84,13 @@
 {
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
     // get gameinfo from Kelsey
+    self.inningL.text = app.inning;
+    self.battingL.text = [app.gameDict objectForKey:@"current_batter"];
+    self.pitcherL.text = [app.gameDict objectForKey:@"current_pitcher"];
+    self.playTV.text = [app.gameDict objectForKey:@"last_play"];
+    self.scoreL.text = [app.gameDict objectForKey:@"score"];
 
-    head.image = app.selectedHead;
+    self.head.image = app.selectedHead;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -104,6 +109,11 @@
 }
 
 -(void)dealloc{
+    [inningL release];
+    [battingL release];
+    [pitcherL release];
+    [playTV release];
+    [scoreL  release];
     [super dealloc];
 }
 
