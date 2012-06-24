@@ -8,8 +8,11 @@
 
 #import "topShouts.h"
 #import "thanks.h"
+#import "ruckusAppDelegate.h"
 
 @implementation topShouts
+
+@synthesize reaction1,reaction2,reaction3;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -20,10 +23,19 @@
     return self;
 }
 
+-(IBAction)upVote:(id)sender{
+    int nameindex = [sender tag] + 1;
+    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSString *reaction_obj_name = [NSString stringWithFormat:@"reaction%d",nameindex];
+    NSString *reaction_id = [[app.reactionsDict objectForKey:reaction_obj_name] objectForKey:@"reaction_id"];
+    [app doUpVotePost:reaction_id];
+    
+}
+
 -(IBAction)doneLeader{
     thanks *th = [[thanks alloc] initWithNibName:@"thanks" bundle:nil];
-    [[self navigationController] pushViewController:th];
-    [th release];
+    [[self navigationController] pushViewController:th animated:YES];
+     [th release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,6 +50,11 @@
 
 - (void)viewDidLoad
 {
+    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+    reaction1.text = [[app.reactionsDict objectForKey:@"reaction1"] objectForKey:@"content"];
+    reaction2.text = [[app.reactionsDict objectForKey:@"reaction2"] objectForKey:@"content"];
+    reaction3.text = [[app.reactionsDict objectForKey:@"reaction3"] objectForKey:@"content"];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -53,6 +70,14 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(void)dealloc{
+    [reaction1 release];
+    [reaction2 release];
+    [reaction3 release];
+    [super release];
+    
 }
 
 @end

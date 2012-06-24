@@ -9,6 +9,7 @@
 #import "shout.h"
 #import "RootViewController.h"
 #import "topShouts.h"
+#import "ruckusAppDelegate.h"
 
 @implementation shout
 @synthesize tf;
@@ -24,6 +25,10 @@
 
 -(IBAction)submitText{
     // upload tf.text
+    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [app doShoutUpload:tf.text];
+    
+    /* BYPASS shout for testing */
     RootViewController *rvc = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
     [[self navigationController] pushViewController:rvc animated:YES];
     [rvc release];
@@ -31,6 +36,10 @@
 }
 
 -(IBAction)seeTopShouts{
+    // send lurk
+    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [app getReactionsLurk]; // lurk
+    
     topShouts *ts = [[topShouts alloc] initWithNibName:@"topShouts" bundle:nil];
     [[self navigationController] pushViewController:ts animated:YES];
     [ts release];

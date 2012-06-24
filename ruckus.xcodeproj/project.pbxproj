@@ -27,6 +27,7 @@
 		ED2EE4ED1596909C0055206F /* thanks.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4EB1596909C0055206F /* thanks.xib */; };
 		ED2EE4F1159690D90055206F /* spirit.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4EF159690D80055206F /* spirit.m */; };
 		ED2EE4F2159690D90055206F /* spirit.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4F0159690D80055206F /* spirit.xib */; };
+		ED2EE4F51596AA8B0055206F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4F41596AA8B0055206F /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		ED2EE4EE159690D80055206F /* spirit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spirit.h; sourceTree = "<group>"; };
 		ED2EE4EF159690D80055206F /* spirit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = spirit.m; sourceTree = "<group>"; };
 		ED2EE4F0159690D80055206F /* spirit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = spirit.xib; sourceTree = "<group>"; };
+		ED2EE4F31596AA8B0055206F /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		ED2EE4F41596AA8B0055206F /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				ED2EE4EE159690D80055206F /* spirit.h */,
 				ED2EE4EF159690D80055206F /* spirit.m */,
 				ED2EE4F0159690D80055206F /* spirit.xib */,
+				ED2EE4F31596AA8B0055206F /* JSONKit.h */,
+				ED2EE4F41596AA8B0055206F /* JSONKit.m */,
 				ED2EE4BB159667470055206F /* Supporting Files */,
 			);
 			path = ruckus;
@@ -221,6 +226,7 @@
 				ED2EE4E715968FD70055206F /* topShouts.m in Sources */,
 				ED2EE4EC1596909C0055206F /* thanks.m in Sources */,
 				ED2EE4F1159690D90055206F /* spirit.m in Sources */,
+				ED2EE4F51596AA8B0055206F /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

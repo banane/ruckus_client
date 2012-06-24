@@ -15,6 +15,6 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *gameInfo;
 
--(IBAction)selectTeam ;
+-(IBAction)selectTeam:(id)sender ;
 
 @end

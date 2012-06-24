@@ -8,6 +8,7 @@
 
 #import "game.h"
 #import "shout.h"
+#import "ruckusAppDelegate.h"
 
 @implementation game
 @synthesize gameInfo;
@@ -37,9 +38,13 @@
     // Do any additional setup after loading the view from its nib.
 }
 
--(IBAction)selectTeam{
-    
+-(IBAction)selectTeam:(id)sender{
+    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+
     // set skins
+    /// change before going live
+    NSArray *teams = [[NSArray alloc] initWithObjects:@"chn",@"ari",nil];
+    app.team = [teams objectAtIndex:[sender tag]];
     
     shout *sh = [[shout alloc] initWithNibName:@"shout" bundle:nil];
     [[self navigationController] pushViewController:sh animated:YES];
