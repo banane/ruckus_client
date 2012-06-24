@@ -17,6 +17,16 @@
 		ED2EE4CB159667470055206F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4CA159667470055206F /* RootViewController.m */; };
 		ED2EE4CE159667470055206F /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4CC159667470055206F /* RootViewController.xib */; };
 		ED2EE4D51596705E0055206F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4D41596705E0055206F /* AVFoundation.framework */; };
+		ED2EE4DD15968A3C0055206F /* game.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4DB15968A3C0055206F /* game.m */; };
+		ED2EE4DE15968A3C0055206F /* game.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4DC15968A3C0055206F /* game.xib */; };
+		ED2EE4E215968B910055206F /* shout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4E015968B910055206F /* shout.m */; };
+		ED2EE4E315968B910055206F /* shout.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4E115968B910055206F /* shout.xib */; };
+		ED2EE4E715968FD70055206F /* topShouts.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4E515968FD70055206F /* topShouts.m */; };
+		ED2EE4E815968FD70055206F /* topShouts.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4E615968FD70055206F /* topShouts.xib */; };
+		ED2EE4EC1596909C0055206F /* thanks.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4EA1596909C0055206F /* thanks.m */; };
+		ED2EE4ED1596909C0055206F /* thanks.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4EB1596909C0055206F /* thanks.xib */; };
+		ED2EE4F1159690D90055206F /* spirit.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4EF159690D80055206F /* spirit.m */; };
+		ED2EE4F2159690D90055206F /* spirit.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4F0159690D80055206F /* spirit.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +45,21 @@
 		ED2EE4CA159667470055206F /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		ED2EE4CD159667470055206F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		ED2EE4D41596705E0055206F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		ED2EE4DA15968A3C0055206F /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		ED2EE4DB15968A3C0055206F /* game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = game.m; sourceTree = "<group>"; };
+		ED2EE4DC15968A3C0055206F /* game.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = game.xib; sourceTree = "<group>"; };
+		ED2EE4DF15968B910055206F /* shout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shout.h; sourceTree = "<group>"; };
+		ED2EE4E015968B910055206F /* shout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shout.m; sourceTree = "<group>"; };
+		ED2EE4E115968B910055206F /* shout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shout.xib; sourceTree = "<group>"; };
+		ED2EE4E415968FD70055206F /* topShouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topShouts.h; sourceTree = "<group>"; };
+		ED2EE4E515968FD70055206F /* topShouts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topShouts.m; sourceTree = "<group>"; };
+		ED2EE4E615968FD70055206F /* topShouts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = topShouts.xib; sourceTree = "<group>"; };
+		ED2EE4E91596909B0055206F /* thanks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thanks.h; sourceTree = "<group>"; };
+		ED2EE4EA1596909C0055206F /* thanks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thanks.m; sourceTree = "<group>"; };
+		ED2EE4EB1596909C0055206F /* thanks.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = thanks.xib; sourceTree = "<group>"; };
+		ED2EE4EE159690D80055206F /* spirit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spirit.h; sourceTree = "<group>"; };
+		ED2EE4EF159690D80055206F /* spirit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = spirit.m; sourceTree = "<group>"; };
+		ED2EE4F0159690D80055206F /* spirit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = spirit.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +111,24 @@
 				ED2EE4C3159667470055206F /* ruckusAppDelegate.h */,
 				ED2EE4C4159667470055206F /* ruckusAppDelegate.m */,
 				ED2EE4C6159667470055206F /* MainWindow.xib */,
+				ED2EE4DA15968A3C0055206F /* game.h */,
+				ED2EE4DB15968A3C0055206F /* game.m */,
+				ED2EE4DC15968A3C0055206F /* game.xib */,
+				ED2EE4DF15968B910055206F /* shout.h */,
+				ED2EE4E015968B910055206F /* shout.m */,
+				ED2EE4E115968B910055206F /* shout.xib */,
 				ED2EE4C9159667470055206F /* RootViewController.h */,
 				ED2EE4CA159667470055206F /* RootViewController.m */,
 				ED2EE4CC159667470055206F /* RootViewController.xib */,
+				ED2EE4E415968FD70055206F /* topShouts.h */,
+				ED2EE4E515968FD70055206F /* topShouts.m */,
+				ED2EE4E615968FD70055206F /* topShouts.xib */,
+				ED2EE4E91596909B0055206F /* thanks.h */,
+				ED2EE4EA1596909C0055206F /* thanks.m */,
+				ED2EE4EB1596909C0055206F /* thanks.xib */,
+				ED2EE4EE159690D80055206F /* spirit.h */,
+				ED2EE4EF159690D80055206F /* spirit.m */,
+				ED2EE4F0159690D80055206F /* spirit.xib */,
 				ED2EE4BB159667470055206F /* Supporting Files */,
 			);
 			path = ruckus;
@@ -158,6 +198,11 @@
 				ED2EE4BF159667470055206F /* InfoPlist.strings in Resources */,
 				ED2EE4C8159667470055206F /* MainWindow.xib in Resources */,
 				ED2EE4CE159667470055206F /* RootViewController.xib in Resources */,
+				ED2EE4DE15968A3C0055206F /* game.xib in Resources */,
+				ED2EE4E315968B910055206F /* shout.xib in Resources */,
+				ED2EE4E815968FD70055206F /* topShouts.xib in Resources */,
+				ED2EE4ED1596909C0055206F /* thanks.xib in Resources */,
+				ED2EE4F2159690D90055206F /* spirit.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +216,11 @@
 				ED2EE4C1159667470055206F /* main.m in Sources */,
 				ED2EE4C5159667470055206F /* ruckusAppDelegate.m in Sources */,
 				ED2EE4CB159667470055206F /* RootViewController.m in Sources */,
+				ED2EE4DD15968A3C0055206F /* game.m in Sources */,
+				ED2EE4E215968B910055206F /* shout.m in Sources */,
+				ED2EE4E715968FD70055206F /* topShouts.m in Sources */,
+				ED2EE4EC1596909C0055206F /* thanks.m in Sources */,
+				ED2EE4F1159690D90055206F /* spirit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

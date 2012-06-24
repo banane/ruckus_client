@@ -7,8 +7,9 @@
 //
 
 #import "RootViewController.h"
+#import "topShouts.h"
 
-#define TOTALDURATION 5
+#define TOTALDURATION 3
 
 @implementation RootViewController
 
@@ -55,6 +56,12 @@
     }
 }
 
+-(IBAction)submitWeight{
+    topShouts *ts = [[topShouts alloc] initWithNibName:@"topShouts" bundle:nil];
+    [[self navigationController] pushViewController:ts animated:YES];
+    [ts release];
+}
+
 
 -(void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder  successfully:(BOOL)flag
 {
@@ -77,8 +84,8 @@
     //Start the actual Recording
     [audioRecorder recordForDuration:(NSTimeInterval)TOTALDURATION];
     [audioRecorder record];
-    
-    NSTimer *TimerUpdate = [NSTimer scheduledTimerWithTimeInterval:.2 
+   
+    TimerUpdate = [NSTimer scheduledTimerWithTimeInterval:.2 
                                                             target:self selector:@selector(timerTask) userInfo:nil repeats:YES];
 
 }
@@ -90,6 +97,11 @@
     totalDecibels += level;
     decibelLevel.text = [NSString stringWithFormat:@"%d",totalDecibels];
     NSLog(@"%f", level);
+    if(!audioRecorder.recording)
+    {
+        [TimerUpdate invalidate];
+//        TimerUpdate = nil;   
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated

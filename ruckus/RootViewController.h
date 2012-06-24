@@ -16,6 +16,7 @@
     IBOutlet UIButton *rBtn;
     IBOutlet UILabel *decibelLevel;
     int totalDecibels;
+    NSTimer *TimerUpdate;
 
 }
 
@@ -25,5 +26,6 @@
 
 -(IBAction)startRecording;
 -(void)timerTask;
+-(IBAction)submitWeight;
 
 @end
