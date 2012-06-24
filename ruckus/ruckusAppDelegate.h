@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBConnect.h"
 
-@interface ruckusAppDelegate : NSObject <UIApplicationDelegate>{
+@interface ruckusAppDelegate : NSObject <UIApplicationDelegate,FBSessionDelegate>{
     NSString *uid;
     NSString *currDate;
     NSDictionary *reactionsDict;
@@ -17,6 +18,7 @@
     UIImage *selectedHead;
     NSDictionary *gameDict;
     NSString *inning;
+    Facebook *facebook;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -31,6 +33,7 @@
 @property (nonatomic, retain) UIImage *selectedHead;
 @property (nonatomic, retain) NSDictionary *gameDict;
 @property (nonatomic, retain) NSString *inning;
+@property (nonatomic, retain) Facebook *facebook;
 
 -(void)doShoutUpload:(NSString *)shoutString;
 -(void)getReactionsLurk;

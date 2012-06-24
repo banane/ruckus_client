@@ -12,11 +12,11 @@
 #define HEROKU_URL @"http://ruckus.herokuapp.com/mlb/"
 
 
-@implementation ruckusAppDelegate
+@implementation ruckusAppDelegate 
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
-@synthesize uid,reactionsDict,team,currDate,topReactionsDict,selectedHead,gameDict,inning;
+@synthesize uid,reactionsDict,team,currDate,topReactionsDict,selectedHead,gameDict,inning,facebook;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -25,6 +25,7 @@
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     self.uid = [[UIDevice currentDevice] uniqueIdentifier];
+    facebook = [[Facebook alloc] initWithAppId:@"438415766181950" andDelegate:self];
 
     NSDate *now = [NSDate date];
     NSDateFormatter *format = [[NSDateFormatter alloc] init];
@@ -211,6 +212,7 @@
     [topReactionsDict release];
     [selectedHead release];
     [gameDict  release];
+    [facebook release];
     [super dealloc];
 }
 
