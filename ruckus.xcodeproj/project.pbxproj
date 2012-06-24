@@ -17,6 +17,8 @@
 		ED05E55815979FE2005DF412 /* BKG_LoudestRuckus_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E55715979FE2005DF412 /* BKG_LoudestRuckus_x1.png */; };
 		ED05E55A1597A021005DF412 /* BUTTON_SeeFanFrenzy_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E5591597A021005DF412 /* BUTTON_SeeFanFrenzy_x1.png */; };
 		ED05E55C1597A0EC005DF412 /* BKG_FanFrenzy_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E55B1597A0EC005DF412 /* BKG_FanFrenzy_x1.png */; };
+		ED05E55E1597A78E005DF412 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E55D1597A78E005DF412 /* Icon.png */; };
+		ED05E5601597AABE005DF412 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E55F1597AABD005DF412 /* icon.png */; };
 		ED2EE4B5159667470055206F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4B4159667470055206F /* UIKit.framework */; };
 		ED2EE4B7159667470055206F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4B6159667470055206F /* Foundation.framework */; };
 		ED2EE4B9159667470055206F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4B8159667470055206F /* CoreGraphics.framework */; };
@@ -32,8 +34,6 @@
 		ED2EE4E215968B910055206F /* shout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4E015968B910055206F /* shout.m */; };
 		ED2EE4E715968FD70055206F /* topShouts.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4E515968FD70055206F /* topShouts.m */; };
 		ED2EE4E815968FD70055206F /* topShouts.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4E615968FD70055206F /* topShouts.xib */; };
-		ED2EE4EC1596909C0055206F /* thanks.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4EA1596909C0055206F /* thanks.m */; };
-		ED2EE4ED1596909C0055206F /* thanks.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4EB1596909C0055206F /* thanks.xib */; };
 		ED2EE4F1159690D90055206F /* spirit.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4EF159690D80055206F /* spirit.m */; };
 		ED2EE4F2159690D90055206F /* spirit.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4F0159690D80055206F /* spirit.xib */; };
 		ED2EE4F51596AA8B0055206F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4F41596AA8B0055206F /* JSONKit.m */; };
@@ -93,6 +93,8 @@
 		ED05E55715979FE2005DF412 /* BKG_LoudestRuckus_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_LoudestRuckus_x1.png; sourceTree = "<group>"; };
 		ED05E5591597A021005DF412 /* BUTTON_SeeFanFrenzy_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_SeeFanFrenzy_x1.png; sourceTree = "<group>"; };
 		ED05E55B1597A0EC005DF412 /* BKG_FanFrenzy_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_FanFrenzy_x1.png; sourceTree = "<group>"; };
+		ED05E55D1597A78E005DF412 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		ED05E55F1597AABD005DF412 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		ED2EE4B0159667470055206F /* ruckus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ruckus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2EE4B4159667470055206F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED2EE4B6159667470055206F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,9 +118,6 @@
 		ED2EE4E415968FD70055206F /* topShouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topShouts.h; sourceTree = "<group>"; };
 		ED2EE4E515968FD70055206F /* topShouts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topShouts.m; sourceTree = "<group>"; };
 		ED2EE4E615968FD70055206F /* topShouts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = topShouts.xib; sourceTree = "<group>"; };
-		ED2EE4E91596909B0055206F /* thanks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thanks.h; sourceTree = "<group>"; };
-		ED2EE4EA1596909C0055206F /* thanks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thanks.m; sourceTree = "<group>"; };
-		ED2EE4EB1596909C0055206F /* thanks.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = thanks.xib; sourceTree = "<group>"; };
 		ED2EE4EE159690D80055206F /* spirit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spirit.h; sourceTree = "<group>"; };
 		ED2EE4EF159690D80055206F /* spirit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = spirit.m; sourceTree = "<group>"; };
 		ED2EE4F0159690D80055206F /* spirit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = spirit.xib; sourceTree = "<group>"; };
@@ -190,6 +189,8 @@
 		ED2EE4A5159667470055206F = {
 			isa = PBXGroup;
 			children = (
+				ED05E55F1597AABD005DF412 /* icon.png */,
+				ED05E55D1597A78E005DF412 /* Icon.png */,
 				ED4DE1AA1596EF9A00FD54C6 /* Entitlements.entitlements */,
 				ED2EE5011596D0490055206F /* Default@2x.png */,
 				ED2EE4FF1596D0420055206F /* Default.png */,
@@ -251,9 +252,6 @@
 				ED2EE4EE159690D80055206F /* spirit.h */,
 				ED2EE4EF159690D80055206F /* spirit.m */,
 				ED2EE4F0159690D80055206F /* spirit.xib */,
-				ED2EE4E91596909B0055206F /* thanks.h */,
-				ED2EE4EA1596909C0055206F /* thanks.m */,
-				ED2EE4EB1596909C0055206F /* thanks.xib */,
 				ED2EE4F31596AA8B0055206F /* JSONKit.h */,
 				ED2EE4F41596AA8B0055206F /* JSONKit.m */,
 				ED2EE4BB159667470055206F /* Supporting Files */,
@@ -375,7 +373,6 @@
 				ED2EE4CE159667470055206F /* RootViewController.xib in Resources */,
 				ED2EE4DE15968A3C0055206F /* game.xib in Resources */,
 				ED2EE4E815968FD70055206F /* topShouts.xib in Resources */,
-				ED2EE4ED1596909C0055206F /* thanks.xib in Resources */,
 				ED2EE4F2159690D90055206F /* spirit.xib in Resources */,
 				ED2EE4FA1596C82E0055206F /* topShoutsAll.xib in Resources */,
 				ED2EE4FD1596D0180055206F /* SPLASH_x1.png in Resources */,
@@ -427,6 +424,8 @@
 				ED05E55815979FE2005DF412 /* BKG_LoudestRuckus_x1.png in Resources */,
 				ED05E55A1597A021005DF412 /* BUTTON_SeeFanFrenzy_x1.png in Resources */,
 				ED05E55C1597A0EC005DF412 /* BKG_FanFrenzy_x1.png in Resources */,
+				ED05E55E1597A78E005DF412 /* Icon.png in Resources */,
+				ED05E5601597AABE005DF412 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +442,6 @@
 				ED2EE4DD15968A3C0055206F /* game.m in Sources */,
 				ED2EE4E215968B910055206F /* shout.m in Sources */,
 				ED2EE4E715968FD70055206F /* topShouts.m in Sources */,
-				ED2EE4EC1596909C0055206F /* thanks.m in Sources */,
 				ED2EE4F1159690D90055206F /* spirit.m in Sources */,
 				ED2EE4F51596AA8B0055206F /* JSONKit.m in Sources */,
 				ED2EE4F91596C82E0055206F /* topShoutsAll.m in Sources */,

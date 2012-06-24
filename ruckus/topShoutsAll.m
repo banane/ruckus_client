@@ -41,6 +41,8 @@
 
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
     self.head.image = app.selectedHead;
+    self.inning.text = app.inning;
+    
     if([app.topReactionsDict count]>0){
         reaction1.text = [[app.topReactionsDict objectForKey:@"reaction1"] objectForKey:@"content"];
         reaction2.text = [[app.topReactionsDict objectForKey:@"reaction2"] objectForKey:@"content"];

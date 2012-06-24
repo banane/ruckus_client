@@ -67,6 +67,7 @@
         app.selectedHead = [UIImage imageNamed:@"yankees_head.png"];
     }
     [app getGameInfo];
+    [app getTopReactions];
     /* for debugging */
         
     

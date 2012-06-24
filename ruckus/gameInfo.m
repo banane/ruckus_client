@@ -42,7 +42,8 @@
 - (void)viewDidLoad
 {
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
-    self.topRuckusTV.text = [app.topReactionsDict objectForKey:@"reaction1"];
+    self.topRuckusTV.text = [[app.topReactionsDict objectForKey:@"reaction1"] objectForKey:@"content"];
+    
     self.inningL.text = app.inning;
     self.battingL.text = [app.gameDict objectForKey:@"current_batter"];
     self.pitcherL.text = [app.gameDict objectForKey:@"current_pitcher"];
