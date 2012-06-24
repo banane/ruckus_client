@@ -13,6 +13,7 @@
     NSString *currDate;
     NSDictionary *reactionsDict;
     NSString *team;
+    NSDictionary *topReactionsDict;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -23,9 +24,11 @@
 @property (nonatomic,retain) NSString *currDate;
 @property (nonatomic, retain) NSDictionary *reactionsDict;
 @property (nonatomic, retain) NSString *team;
+@property (nonatomic, retain) NSDictionary *topReactionsDict;
 
 -(void)doShoutUpload:(NSString *)shoutString;
 -(void)getReactionsLurk;
 -(void)doUpVotePost:(NSString *)reaction_id;
+-(void)getTopReactions;
     
 @end

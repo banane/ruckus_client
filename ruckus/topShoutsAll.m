@@ -1,16 +1,15 @@
 //
-//  topShouts.m
+//  topShoutsAll.m
 //  ruckus
 //
 //  Created by Anna Billstrom on 6/23/12.
 //  Copyright 2012 Momentus Media. All rights reserved.
 //
 
-#import "topShouts.h"
-#import "RootViewController.h"
+#import "topShoutsAll.h"
 #import "ruckusAppDelegate.h"
 
-@implementation topShouts
+@implementation topShoutsAll
 
 @synthesize reaction1,reaction2,reaction3;
 
@@ -21,21 +20,6 @@
         // Custom initialization
     }
     return self;
-}
-
--(IBAction)upVote:(id)sender{
-    int nameindex = [sender tag] + 1;
-    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSString *reaction_obj_name = [NSString stringWithFormat:@"reaction%d",nameindex];
-    NSString *reaction_id = [[app.reactionsDict objectForKey:reaction_obj_name] objectForKey:@"reaction_id"];
-    [app doUpVotePost:reaction_id];
-    
-}
-
--(IBAction)doneLeader{
-    RootViewController *rvc = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
-    [[self navigationController] pushViewController:rvc animated:YES];
-     [rvc release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,10 +35,10 @@
 - (void)viewDidLoad
 {
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
-    reaction1.text = [[app.reactionsDict objectForKey:@"reaction1"] objectForKey:@"content"];
-    reaction2.text = [[app.reactionsDict objectForKey:@"reaction2"] objectForKey:@"content"];
-    reaction3.text = [[app.reactionsDict objectForKey:@"reaction3"] objectForKey:@"content"];
     
+    reaction1.text = [[app.topReactionsDict objectForKey:@"reaction1"] objectForKey:@"content"];
+    reaction2.text = [[app.topReactionsDict objectForKey:@"reaction2"] objectForKey:@"content"];
+    reaction3.text = [[app.topReactionsDict objectForKey:@"reaction3"] objectForKey:@"content"];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -76,8 +60,6 @@
     [reaction1 release];
     [reaction2 release];
     [reaction3 release];
-    [super release];
-    
 }
 
 @end

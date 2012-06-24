@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-#import "topShouts.h"
+#import "topShoutsAll.h"
 
 #define TOTALDURATION 3
 
@@ -57,9 +57,9 @@
 }
 
 -(IBAction)submitWeight{
-    topShouts *ts = [[topShouts alloc] initWithNibName:@"topShouts" bundle:nil];
-    [[self navigationController] pushViewController:ts animated:YES];
-    [ts release];
+    topShoutsAll *tsa = [[topShoutsAll alloc] initWithNibName:@"topShoutsAll" bundle:nil];
+    [[self navigationController] pushViewController:tsa animated:YES];
+    [tsa release];
 }
 
 

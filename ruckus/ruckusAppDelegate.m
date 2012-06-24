@@ -16,7 +16,7 @@
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
-@synthesize uid,reactionsDict,team,currDate;
+@synthesize uid,reactionsDict,team,currDate,topReactionsDict;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -25,7 +25,6 @@
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     self.uid = [[UIDevice currentDevice] uniqueIdentifier];
-//    self.currDate = "2012-04-23";
 
     NSDate *now = [NSDate date];
     NSDateFormatter *format = [[NSDateFormatter alloc] init];
@@ -122,6 +121,29 @@
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
 }
 
+-(void)getTopReactions{
+    // DEFAULT VALUES
+//    GET /<date>/<team>/top?inning=<inning>&number=<number of winners desired>&whose=<mine, theirs, or both>  
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/%@/top?inning=&number=3&whose=",HEROKU_URL,self.currDate, self.team]];
+    
+    NSLog(@"the url: %@",url);
+    
+    NSURLResponse *response;
+    NSError *error;
+    
+    NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:url 
+                                                         cachePolicy:NSURLRequestReloadIgnoringCacheData    
+                                                     timeoutInterval:30];
+    
+    [request setHTTPMethod:@"GET"]; 
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    
+    NSString *responseDataString = (NSString *)[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    NSLog(@"datastring: %@",responseDataString);
+    self.topReactionsDict = (NSDictionary *)[responseData objectFromJSONData];
+    NSLog(@"reactions dict: %@", self.reactionsDict);   
+}
+
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     /*
@@ -161,6 +183,7 @@
     [team release];
     [currDate release];
     [reactionsDict release];
+    [topReactionsDict release];
     [super dealloc];
 }
 

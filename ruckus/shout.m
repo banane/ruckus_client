@@ -7,8 +7,8 @@
 //
 
 #import "shout.h"
-#import "RootViewController.h"
 #import "topShouts.h"
+#import "topShoutsAll.h"
 #import "ruckusAppDelegate.h"
 
 @implementation shout
@@ -28,10 +28,9 @@
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
     [app doShoutUpload:tf.text];
     
-    /* BYPASS shout for testing */
-    RootViewController *rvc = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
-    [[self navigationController] pushViewController:rvc animated:YES];
-    [rvc release];
+    topShouts *ts = [[topShouts alloc] initWithNibName:@"topShouts" bundle:nil];
+    [[self navigationController] pushViewController:ts animated:YES];
+    [ts release];
     
 }
 
@@ -40,7 +39,7 @@
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
     [app getReactionsLurk]; // lurk
     
-    topShouts *ts = [[topShouts alloc] initWithNibName:@"topShouts" bundle:nil];
+    topShoutsAll *ts = [[topShoutsAll alloc] initWithNibName:@"topShoutsAll" bundle:nil];
     [[self navigationController] pushViewController:ts animated:YES];
     [ts release];
 }
@@ -85,6 +84,10 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(void)dealloc{
+    
 }
 
 @end
