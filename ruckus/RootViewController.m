@@ -14,11 +14,18 @@
 
 @implementation RootViewController
 
-@synthesize decibelLevel,rBtn,totalDecibels,head;
+@synthesize decibelLevel,rBtn,totalDecibels,head,speaker,animationArray;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    animationArray = [[NSArray alloc] initWithObjects:
+                               [UIImage imageNamed:@"recording1_x1.png"],
+                               [UIImage imageNamed:@"recording2_x1.png"],
+                               [UIImage imageNamed:@"recording3_x1.png"],
+                               [UIImage imageNamed:@"recording4_x1.png"], nil];
+
     
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
     self.head.image = app.selectedHead;
@@ -78,6 +85,8 @@
 }
 
 
+
+
 -(IBAction)startRecording{
     rBtn.hidden = YES;
     
@@ -91,7 +100,25 @@
    
     TimerUpdate = [NSTimer scheduledTimerWithTimeInterval:.2 
                                                             target:self selector:@selector(timerTask) userInfo:nil repeats:YES];
+    self.speaker.animationImages = self.animationArray;
+//    self.speaker.animationDuration = 3.0; // seconds
+//    self.speaker.animationRepeatCount = 10;
+    [self.speaker setAnimationRepeatCount:3];
+    [self.speaker startAnimating];
+    
+}
 
+- (void)viewDidAppear:(BOOL)animated{
+    NSLog(@"view did appear");
+    [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
+    
+}
+
+-(void) hideNavBar {
+    if (self.navigationController.navigationBar.hidden == NO)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
 }
 
 
@@ -105,6 +132,8 @@
     {
         [TimerUpdate invalidate];
 //        TimerUpdate = nil;   
+        [self.speaker stopAnimating];
+        [self submitWeight];
     }
 }
 
@@ -113,10 +142,7 @@
     [super viewWillAppear:animated];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
+
 
 - (void)viewWillDisappear:(BOOL)animated
 {
@@ -148,7 +174,9 @@
 {
     [decibelLevel release];
     [rBtn release];
+    [animationArray release];
     [head release];
+    [speaker release];
     [super dealloc];
 }
 

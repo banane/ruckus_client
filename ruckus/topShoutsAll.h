@@ -14,6 +14,7 @@
     IBOutlet UITextView *reaction3;
     
     IBOutlet UIImageView *head;
+    IBOutlet UILabel *inning;
 
 }
 
@@ -21,6 +22,6 @@
 @property (nonatomic, retain) IBOutlet UITextView *reaction2;
 @property (nonatomic, retain) IBOutlet UITextView *reaction3;
 @property (nonatomic, retain) IBOutlet UIImageView *head;
-
+@property (nonatomic, retain) IBOutlet UILabel *inning;
 
 @end

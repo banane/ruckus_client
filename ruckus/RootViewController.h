@@ -18,12 +18,16 @@
     int totalDecibels;
     NSTimer *TimerUpdate;
     IBOutlet UIImageView *head;
+    IBOutlet UIImageView *speaker;
+    NSArray *animationArray;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *decibelLevel;
 @property (nonatomic, retain) IBOutlet UIButton *rBtn;
 @property (nonatomic) int totalDecibels;
 @property (nonatomic, retain) IBOutlet UIImageView *head;
+@property (nonatomic, retain)     IBOutlet UIImageView *speaker;
+@property (nonatomic, retain) NSArray *animationArray;
 
 -(IBAction)startRecording;
 -(void)timerTask;

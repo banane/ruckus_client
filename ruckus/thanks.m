@@ -24,8 +24,21 @@
 
 -(IBAction)viewSpirit{
     spirit *sp = [[spirit alloc] initWithNibName:@"spirit" bundle:nil];
-    [[self navigationController] pushWithNibName:sp];
+    [[self navigationController] pushWithNibName:sp animated:YES];
     [sp release];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    NSLog(@"view did appear");
+    [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
+    
+}
+
+-(void) hideNavBar {
+    if (self.navigationController.navigationBar.hidden == NO)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning

@@ -29,6 +29,19 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    NSLog(@"view did appear");
+    [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
+    
+}
+
+-(void) hideNavBar {
+    if (self.navigationController.navigationBar.hidden == NO)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad

@@ -22,6 +22,19 @@
     return self;
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    NSLog(@"view did appear");
+    [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
+    
+}
+
+-(void) hideNavBar {
+    if (self.navigationController.navigationBar.hidden == NO)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.

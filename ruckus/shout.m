@@ -23,6 +23,19 @@
     return self;
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    NSLog(@"view did appear");
+    [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
+    
+}
+
+-(void) hideNavBar {
+    if (self.navigationController.navigationBar.hidden == NO)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+}
+
 -(IBAction)submitText{
     // upload tf.text
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -91,7 +104,7 @@
 }
 
 -(void)dealloc{
-    
+    [super dealloc];
 }
 
 @end

@@ -11,7 +11,7 @@
 
 @implementation topShoutsAll
 
-@synthesize reaction1,reaction2,reaction3,head;
+@synthesize reaction1,reaction2,reaction3,head,inning;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +34,8 @@
 
 - (void)viewDidLoad
 {
+    // kelsey's inning info
+    
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
     self.head.image = app.selectedHead;
     
@@ -44,6 +46,19 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+
+- (void)viewDidAppear:(BOOL)animated{
+    NSLog(@"view did appear");
+    [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
+    
+}
+
+-(void) hideNavBar {
+    if (self.navigationController.navigationBar.hidden == NO)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+}
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -62,6 +77,8 @@
     [reaction2 release];
     [reaction3 release];
     [head release];
+    [inning release];
+    [super dealloc];
 }
 
 @end

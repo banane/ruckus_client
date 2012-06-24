@@ -23,6 +23,19 @@
     return self;
 }
 
+
+- (void)viewDidAppear:(BOOL)animated{
+    NSLog(@"view did appear");
+    [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
+    
+}
+
+-(void) hideNavBar {
+    if (self.navigationController.navigationBar.hidden == NO)
+    {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+}
 -(IBAction)upVote:(id)sender{
     int nameindex = [sender tag] + 1;
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -80,7 +93,7 @@
     [reaction2 release];
     [reaction3 release];
     [head release];
-    [super release];
+    [super dealloc];
     
 }
 
