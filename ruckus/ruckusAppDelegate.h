@@ -41,4 +41,8 @@
 -(void)getTopReactions;
 -(void)getGameInfo;
     
+
+-(void)doOpenGraphPush;
+
+    
 @end

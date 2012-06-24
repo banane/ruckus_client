@@ -45,7 +45,14 @@
     
     topShouts *ts = [[topShouts alloc] initWithNibName:@"topShouts" bundle:nil];
     [[self navigationController] pushViewController:ts animated:YES];
+    [self performSelectorInBackground:@selector(doGraph) withObject:nil];
+
     [ts release];
+    
+}
+-(void)doGraph{
+    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [app doOpenGraphPush];
     
 }
 

@@ -123,7 +123,7 @@
 		<string>IDEActiveWorkspaceTabController</string>
 		<string>IDEWindowToolbarIsVisible</string>
 		<string>IDEWindowTabBarIsVisible</string>
-		<string>{{136, 83}, {1438, 795}}</string>
+		<string>{{38, 83}, {1438, 795}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -405,7 +405,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>43</integer>
+					<integer>46</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -1962,9 +1962,9 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>362266031.70200998</real>
-		<string>{0, 1289}</string>
-		<string>{566, 0}</string>
+		<real>362266808.60192299</real>
+		<string>{0, 1320}</string>
+		<string>{1308, 0}</string>
 		<string>@interface ruckusAppDelegate</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
@@ -8465,9 +8465,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>362266031.69861102</real>
-		<string>{0, 1289}</string>
-		<string>{566, 0}</string>
+		<real>362266808.59914899</real>
+		<string>{0, 1320}</string>
+		<string>{1308, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -8513,9 +8513,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>362257991.469127</real>
-		<string>{0, 541}</string>
-		<string>{485, 0}</string>
+		<real>362266726.24561</real>
+		<string>{0, 557}</string>
+		<string>{551, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9039,9 +9039,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>362266003.84565401</real>
-		<string>{0, 2005}</string>
-		<string>{8891, 0}</string>
+		<real>362266730.20138699</real>
+		<string>{8191, 1666}</string>
+		<string>{8726, 24}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -9183,9 +9183,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>362265737.57667798</real>
-		<string>{511, 1627}</string>
-		<string>{1022, 0}</string>
+		<real>362266723.84894699</real>
+		<string>{511, 1638}</string>
+		<string>{1269, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -13407,8 +13407,8 @@
 		</dict>
 		<string>IDEDeviceLocation</string>
 		<string>IDEDeviceArchitecture</string>
-		<string>dvtdevice-iphonePlaceholder:placeholder</string>
-		<string>armv7</string>
+		<string>dvtdevice-iphonesimulator:/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk-iPhone</string>
+		<string>i386</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -13719,7 +13719,7 @@
 				<integer>1079</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>362266026.697474</real>
+			<real>362266749.55439597</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -13730,7 +13730,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 2:27 PM</string>
+		<string>Today at 2:39 PM</string>
 		<integer>234</integer>
 		<dict>
 			<key>$class</key>
@@ -13792,7 +13792,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>1101</integer>
+					<integer>1102</integer>
 				</dict>
 			</array>
 		</dict>
@@ -13849,7 +13849,7 @@
 				<integer>1089</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/shout.m</string>
+		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/shout.h</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -13867,7 +13867,7 @@
 				<integer>1091</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/shout.xib</string>
+		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/shout.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -13885,7 +13885,7 @@
 				<integer>1093</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/topShouts.xib</string>
+		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/shout.xib</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -13903,7 +13903,7 @@
 				<integer>1095</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/en.lproj/RootViewController.xib</string>
+		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/gameInfo.xib</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -13921,7 +13921,7 @@
 				<integer>1097</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/RootViewController.m</string>
+		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/topShouts.xib</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -13939,7 +13939,25 @@
 				<integer>1099</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/gameInfo.xib</string>
+		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/en.lproj/RootViewController.xib</string>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>193</integer>
+			</dict>
+			<key>NS.base</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>0</integer>
+			</dict>
+			<key>NS.relative</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>1101</integer>
+			</dict>
+		</dict>
+		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/RootViewController.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -13957,24 +13975,6 @@
 				<integer>390</integer>
 			</dict>
 		</dict>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>193</integer>
-			</dict>
-			<key>NS.base</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>0</integer>
-			</dict>
-			<key>NS.relative</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>1102</integer>
-			</dict>
-		</dict>
-		<string>file://localhost/Users/banane/dev/iOS/ruckus/ruckus/topShouts.m</string>
 	</array>
 	<key>$top</key>
 	<dict>

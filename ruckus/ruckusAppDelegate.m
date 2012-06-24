@@ -200,6 +200,29 @@
      See also applicationDidEnterBackground:.
      */
 }
+// fb stuff
+-(void)fbLoginStuff{
+    if (![facebook isSessionValid]) {
+        [facebook authorize:nil];
+    }
+}
+
+-(void)doOpenGraphPush{
+//     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/%@/gameinfo/",HEROKU_URL,self.currDate, self.team]];
+    
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/me/appruckus:make?ruckus=&access_token=%@",[facebook accessToken]]];
+    NSURLResponse *response;
+    NSError *error;
+
+    NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:url 
+                                                       cachePolicy:NSURLRequestReloadIgnoringCacheData    
+                                                   timeoutInterval:30];
+
+    [request setHTTPMethod:@"POST"]; 
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+                  /* ignore response */
+}
 
 - (void)dealloc
 {

@@ -23,5 +23,6 @@
 
 -(IBAction)submitText;
 -(IBAction)seeTopShouts;
+-(void)doGraph;
 
 @end
