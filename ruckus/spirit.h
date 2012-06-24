@@ -13,5 +13,6 @@
 
 }
 @property (nonatomic, retain)     IBOutlet UIImageView *head;
+-(IBAction)viewChoose;
 
 @end

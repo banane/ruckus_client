@@ -12,7 +12,7 @@
 #import "ruckusAppDelegate.h"
 
 @implementation shout
-@synthesize tf,head,gameInfoTV,inningL,battingL,pitcherL,playTV,scoreL;
+@synthesize tf,head,gameInfoTV;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,6 +40,8 @@
     // upload tf.text
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
     [app doShoutUpload:tf.text];
+
+    self.head.image = app.selectedHead;
     
     topShouts *ts = [[topShouts alloc] initWithNibName:@"topShouts" bundle:nil];
     [[self navigationController] pushViewController:ts animated:YES];
@@ -84,11 +86,7 @@
 {
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
     // get gameinfo from Kelsey
-    self.inningL.text = app.inning;
-    self.battingL.text = [app.gameDict objectForKey:@"current_batter"];
-    self.pitcherL.text = [app.gameDict objectForKey:@"current_pitcher"];
-    self.playTV.text = [app.gameDict objectForKey:@"last_play"];
-    self.scoreL.text = [app.gameDict objectForKey:@"score"];
+
 
     self.head.image = app.selectedHead;
     [super viewDidLoad];
@@ -109,11 +107,6 @@
 }
 
 -(void)dealloc{
-    [inningL release];
-    [battingL release];
-    [pitcherL release];
-    [playTV release];
-    [scoreL  release];
     [super dealloc];
 }
 

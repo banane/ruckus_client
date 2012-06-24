@@ -10,6 +10,7 @@
 #import "shout.h"
 #import "ruckusAppDelegate.h"
 #import "RootViewController.h"
+#import "gameInfo.h"
 
 @implementation game
 @synthesize gameInfo;
@@ -69,9 +70,13 @@
     /* for debugging */
         
     
-    shout *sh = [[shout alloc] initWithNibName:@"shout" bundle:nil];
+   /* shout *sh = [[shout alloc] initWithNibName:@"shout" bundle:nil];
     [[self navigationController] pushViewController:sh animated:YES];
-    [sh release];
+    [sh release];*/
+
+    gameInfo *gvc = [[gameInfo alloc] initWithNibName:@"gameInfo" bundle:nil];
+     [[self navigationController] pushViewController:gvc animated:YES];
+     [gvc release];
 }
 
 - (void)viewDidUnload

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED05E54C15979CE7005DF412 /* BUTTON_Draw_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E54815979CE7005DF412 /* BUTTON_Draw_x1.png */; };
+		ED05E54D15979CE7005DF412 /* BUTTON_Photography_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E54915979CE7005DF412 /* BUTTON_Photography_x1.png */; };
+		ED05E54E15979CE7005DF412 /* BUTTON_RECORD_choose_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E54A15979CE7005DF412 /* BUTTON_RECORD_choose_x1.png */; };
+		ED05E54F15979CE7005DF412 /* BUTTON_WriteIt_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E54B15979CE7005DF412 /* BUTTON_WriteIt_x1.png */; };
+		ED05E55215979E77005DF412 /* BKG_PickFavorite_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E55115979E77005DF412 /* BKG_PickFavorite_x1.png */; };
+		ED05E55415979EB8005DF412 /* BUTTON_PickFav_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E55315979EB8005DF412 /* BUTTON_PickFav_x1.png */; };
+		ED05E55615979FA8005DF412 /* TEXT_MakeSomeNoise_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E55515979FA8005DF412 /* TEXT_MakeSomeNoise_x1.png */; };
+		ED05E55815979FE2005DF412 /* BKG_LoudestRuckus_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E55715979FE2005DF412 /* BKG_LoudestRuckus_x1.png */; };
+		ED05E55A1597A021005DF412 /* BUTTON_SeeFanFrenzy_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E5591597A021005DF412 /* BUTTON_SeeFanFrenzy_x1.png */; };
+		ED05E55C1597A0EC005DF412 /* BKG_FanFrenzy_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED05E55B1597A0EC005DF412 /* BKG_FanFrenzy_x1.png */; };
 		ED2EE4B5159667470055206F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4B4159667470055206F /* UIKit.framework */; };
 		ED2EE4B7159667470055206F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4B6159667470055206F /* Foundation.framework */; };
 		ED2EE4B9159667470055206F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2EE4B8159667470055206F /* CoreGraphics.framework */; };
@@ -20,7 +30,6 @@
 		ED2EE4DD15968A3C0055206F /* game.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4DB15968A3C0055206F /* game.m */; };
 		ED2EE4DE15968A3C0055206F /* game.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4DC15968A3C0055206F /* game.xib */; };
 		ED2EE4E215968B910055206F /* shout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4E015968B910055206F /* shout.m */; };
-		ED2EE4E315968B910055206F /* shout.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4E115968B910055206F /* shout.xib */; };
 		ED2EE4E715968FD70055206F /* topShouts.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4E515968FD70055206F /* topShouts.m */; };
 		ED2EE4E815968FD70055206F /* topShouts.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4E615968FD70055206F /* topShouts.xib */; };
 		ED2EE4EC1596909C0055206F /* thanks.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4EA1596909C0055206F /* thanks.m */; };
@@ -63,9 +72,27 @@
 		ED4DE1A31596E8A900FD54C6 /* BUTTON_DONE_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4DE1A21596E8A900FD54C6 /* BUTTON_DONE_x1.png */; };
 		ED4DE1A51596E92A00FD54C6 /* BKG_SCR6_STATIC_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4DE1A41596E92A00FD54C6 /* BKG_SCR6_STATIC_x1.png */; };
 		ED4DE1AB1596EF9B00FD54C6 /* Entitlements.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = ED4DE1AA1596EF9A00FD54C6 /* Entitlements.entitlements */; };
+		EDEEEF0C159794BB00B2D080 /* gameInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEEEF0A159794BB00B2D080 /* gameInfo.m */; };
+		EDEEEF0D159794BB00B2D080 /* gameInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDEEEF0B159794BB00B2D080 /* gameInfo.xib */; };
+		EDEEEF0F1597960000B2D080 /* BUTTON_MakeARuckus_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDEEEF0E1597960000B2D080 /* BUTTON_MakeARuckus_x1.png */; };
+		EDEEEF111597990A00B2D080 /* shout.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDEEEF101597990A00B2D080 /* shout.xib */; };
+		EDEEEF15159799DB00B2D080 /* choose.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEEEF13159799DA00B2D080 /* choose.m */; };
+		EDEEEF16159799DB00B2D080 /* choose.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDEEEF14159799DA00B2D080 /* choose.xib */; };
+		EDEEEF1915979A0000B2D080 /* BKG_GotSomething_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDEEEF1715979A0000B2D080 /* BKG_GotSomething_x1.png */; };
+		EDEEEF1A15979A0000B2D080 /* BKG_LetsHearIt_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = EDEEEF1815979A0000B2D080 /* BKG_LetsHearIt_x1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED05E54815979CE7005DF412 /* BUTTON_Draw_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_Draw_x1.png; sourceTree = "<group>"; };
+		ED05E54915979CE7005DF412 /* BUTTON_Photography_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_Photography_x1.png; sourceTree = "<group>"; };
+		ED05E54A15979CE7005DF412 /* BUTTON_RECORD_choose_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_RECORD_choose_x1.png; sourceTree = "<group>"; };
+		ED05E54B15979CE7005DF412 /* BUTTON_WriteIt_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_WriteIt_x1.png; sourceTree = "<group>"; };
+		ED05E55115979E77005DF412 /* BKG_PickFavorite_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_PickFavorite_x1.png; sourceTree = "<group>"; };
+		ED05E55315979EB8005DF412 /* BUTTON_PickFav_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_PickFav_x1.png; sourceTree = "<group>"; };
+		ED05E55515979FA8005DF412 /* TEXT_MakeSomeNoise_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TEXT_MakeSomeNoise_x1.png; sourceTree = "<group>"; };
+		ED05E55715979FE2005DF412 /* BKG_LoudestRuckus_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_LoudestRuckus_x1.png; sourceTree = "<group>"; };
+		ED05E5591597A021005DF412 /* BUTTON_SeeFanFrenzy_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_SeeFanFrenzy_x1.png; sourceTree = "<group>"; };
+		ED05E55B1597A0EC005DF412 /* BKG_FanFrenzy_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_FanFrenzy_x1.png; sourceTree = "<group>"; };
 		ED2EE4B0159667470055206F /* ruckus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ruckus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2EE4B4159667470055206F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED2EE4B6159667470055206F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,7 +113,6 @@
 		ED2EE4DC15968A3C0055206F /* game.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = game.xib; sourceTree = "<group>"; };
 		ED2EE4DF15968B910055206F /* shout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shout.h; sourceTree = "<group>"; };
 		ED2EE4E015968B910055206F /* shout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shout.m; sourceTree = "<group>"; };
-		ED2EE4E115968B910055206F /* shout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shout.xib; sourceTree = "<group>"; };
 		ED2EE4E415968FD70055206F /* topShouts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topShouts.h; sourceTree = "<group>"; };
 		ED2EE4E515968FD70055206F /* topShouts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topShouts.m; sourceTree = "<group>"; };
 		ED2EE4E615968FD70055206F /* topShouts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = topShouts.xib; sourceTree = "<group>"; };
@@ -134,6 +160,16 @@
 		ED4DE1A21596E8A900FD54C6 /* BUTTON_DONE_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_DONE_x1.png; sourceTree = "<group>"; };
 		ED4DE1A41596E92A00FD54C6 /* BKG_SCR6_STATIC_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_SCR6_STATIC_x1.png; sourceTree = "<group>"; };
 		ED4DE1AA1596EF9A00FD54C6 /* Entitlements.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
+		EDEEEF09159794BB00B2D080 /* gameInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameInfo.h; sourceTree = "<group>"; };
+		EDEEEF0A159794BB00B2D080 /* gameInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gameInfo.m; sourceTree = "<group>"; };
+		EDEEEF0B159794BB00B2D080 /* gameInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = gameInfo.xib; sourceTree = "<group>"; };
+		EDEEEF0E1597960000B2D080 /* BUTTON_MakeARuckus_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_MakeARuckus_x1.png; sourceTree = "<group>"; };
+		EDEEEF101597990A00B2D080 /* shout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shout.xib; sourceTree = "<group>"; };
+		EDEEEF12159799DA00B2D080 /* choose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = choose.h; sourceTree = "<group>"; };
+		EDEEEF13159799DA00B2D080 /* choose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = choose.m; sourceTree = "<group>"; };
+		EDEEEF14159799DA00B2D080 /* choose.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = choose.xib; sourceTree = "<group>"; };
+		EDEEEF1715979A0000B2D080 /* BKG_GotSomething_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_GotSomething_x1.png; sourceTree = "<group>"; };
+		EDEEEF1815979A0000B2D080 /* BKG_LetsHearIt_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_LetsHearIt_x1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,9 +230,15 @@
 				ED2EE4DA15968A3C0055206F /* game.h */,
 				ED2EE4DB15968A3C0055206F /* game.m */,
 				ED2EE4DC15968A3C0055206F /* game.xib */,
+				EDEEEF09159794BB00B2D080 /* gameInfo.h */,
+				EDEEEF0A159794BB00B2D080 /* gameInfo.m */,
+				EDEEEF0B159794BB00B2D080 /* gameInfo.xib */,
+				EDEEEF12159799DA00B2D080 /* choose.h */,
+				EDEEEF13159799DA00B2D080 /* choose.m */,
+				EDEEEF14159799DA00B2D080 /* choose.xib */,
 				ED2EE4DF15968B910055206F /* shout.h */,
 				ED2EE4E015968B910055206F /* shout.m */,
-				ED2EE4E115968B910055206F /* shout.xib */,
+				EDEEEF101597990A00B2D080 /* shout.xib */,
 				ED2EE4E415968FD70055206F /* topShouts.h */,
 				ED2EE4E515968FD70055206F /* topShouts.m */,
 				ED2EE4E615968FD70055206F /* topShouts.xib */,
@@ -233,6 +275,19 @@
 		ED2EE5031596D0610055206F /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				ED05E55B1597A0EC005DF412 /* BKG_FanFrenzy_x1.png */,
+				ED05E5591597A021005DF412 /* BUTTON_SeeFanFrenzy_x1.png */,
+				ED05E55715979FE2005DF412 /* BKG_LoudestRuckus_x1.png */,
+				ED05E55515979FA8005DF412 /* TEXT_MakeSomeNoise_x1.png */,
+				ED05E55315979EB8005DF412 /* BUTTON_PickFav_x1.png */,
+				ED05E55115979E77005DF412 /* BKG_PickFavorite_x1.png */,
+				ED05E54815979CE7005DF412 /* BUTTON_Draw_x1.png */,
+				ED05E54915979CE7005DF412 /* BUTTON_Photography_x1.png */,
+				ED05E54A15979CE7005DF412 /* BUTTON_RECORD_choose_x1.png */,
+				ED05E54B15979CE7005DF412 /* BUTTON_WriteIt_x1.png */,
+				EDEEEF1715979A0000B2D080 /* BKG_GotSomething_x1.png */,
+				EDEEEF1815979A0000B2D080 /* BKG_LetsHearIt_x1.png */,
+				EDEEEF0E1597960000B2D080 /* BUTTON_MakeARuckus_x1.png */,
 				ED4DE1A41596E92A00FD54C6 /* BKG_SCR6_STATIC_x1.png */,
 				ED4DE1A21596E8A900FD54C6 /* BUTTON_DONE_x1.png */,
 				ED4DE1941596E63D00FD54C6 /* recording1_x1.png */,
@@ -319,7 +374,6 @@
 				ED2EE4C8159667470055206F /* MainWindow.xib in Resources */,
 				ED2EE4CE159667470055206F /* RootViewController.xib in Resources */,
 				ED2EE4DE15968A3C0055206F /* game.xib in Resources */,
-				ED2EE4E315968B910055206F /* shout.xib in Resources */,
 				ED2EE4E815968FD70055206F /* topShouts.xib in Resources */,
 				ED2EE4ED1596909C0055206F /* thanks.xib in Resources */,
 				ED2EE4F2159690D90055206F /* spirit.xib in Resources */,
@@ -357,6 +411,22 @@
 				ED4DE1A31596E8A900FD54C6 /* BUTTON_DONE_x1.png in Resources */,
 				ED4DE1A51596E92A00FD54C6 /* BKG_SCR6_STATIC_x1.png in Resources */,
 				ED4DE1AB1596EF9B00FD54C6 /* Entitlements.entitlements in Resources */,
+				EDEEEF0D159794BB00B2D080 /* gameInfo.xib in Resources */,
+				EDEEEF0F1597960000B2D080 /* BUTTON_MakeARuckus_x1.png in Resources */,
+				EDEEEF111597990A00B2D080 /* shout.xib in Resources */,
+				EDEEEF16159799DB00B2D080 /* choose.xib in Resources */,
+				EDEEEF1915979A0000B2D080 /* BKG_GotSomething_x1.png in Resources */,
+				EDEEEF1A15979A0000B2D080 /* BKG_LetsHearIt_x1.png in Resources */,
+				ED05E54C15979CE7005DF412 /* BUTTON_Draw_x1.png in Resources */,
+				ED05E54D15979CE7005DF412 /* BUTTON_Photography_x1.png in Resources */,
+				ED05E54E15979CE7005DF412 /* BUTTON_RECORD_choose_x1.png in Resources */,
+				ED05E54F15979CE7005DF412 /* BUTTON_WriteIt_x1.png in Resources */,
+				ED05E55215979E77005DF412 /* BKG_PickFavorite_x1.png in Resources */,
+				ED05E55415979EB8005DF412 /* BUTTON_PickFav_x1.png in Resources */,
+				ED05E55615979FA8005DF412 /* TEXT_MakeSomeNoise_x1.png in Resources */,
+				ED05E55815979FE2005DF412 /* BKG_LoudestRuckus_x1.png in Resources */,
+				ED05E55A1597A021005DF412 /* BUTTON_SeeFanFrenzy_x1.png in Resources */,
+				ED05E55C1597A0EC005DF412 /* BKG_FanFrenzy_x1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +447,8 @@
 				ED2EE4F1159690D90055206F /* spirit.m in Sources */,
 				ED2EE4F51596AA8B0055206F /* JSONKit.m in Sources */,
 				ED2EE4F91596C82E0055206F /* topShoutsAll.m in Sources */,
+				EDEEEF0C159794BB00B2D080 /* gameInfo.m in Sources */,
+				EDEEEF15159799DB00B2D080 /* choose.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

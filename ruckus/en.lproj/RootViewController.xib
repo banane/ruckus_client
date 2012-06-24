@@ -135,7 +135,7 @@
 						<string key="NSFrame">{{53, 124}, {213, 211}}</string>
 						<reference key="NSSuperview" ref="609829394"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="994324404"/>
+						<reference key="NSNextKeyView" ref="252928919"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">4</int>
@@ -146,13 +146,12 @@
 							<string key="NSResourceName">recording1_x1.png</string>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="994324404">
+					<object class="IBUIImageView" id="111262918">
 						<reference key="NSNextResponder" ref="609829394"/>
 						<int key="NSvFlags">256</int>
-						<string key="NSFrame">{{90, 358}, {139, 23}}</string>
+						<string key="NSFrame">{{81, 352}, {159, 23}}</string>
 						<reference key="NSSuperview" ref="609829394"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="252928919"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">4</int>
@@ -160,7 +159,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">TEXT_MakeARuckus_x1.png</string>
+							<string key="NSResourceName">TEXT_MakeSomeNoise_x1.png</string>
 						</object>
 					</object>
 				</object>
@@ -254,7 +253,7 @@
 							<reference ref="593350783"/>
 							<reference ref="392931973"/>
 							<reference ref="252928919"/>
-							<reference ref="994324404"/>
+							<reference ref="111262918"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -284,8 +283,8 @@
 						<reference key="parent" ref="609829394"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">23</int>
-						<reference key="object" ref="994324404"/>
+						<int key="objectID">25</int>
+						<reference key="object" ref="111262918"/>
 						<reference key="parent" ref="609829394"/>
 					</object>
 				</object>
@@ -302,7 +301,7 @@
 					<string>19.IBPluginDependency</string>
 					<string>21.IBPluginDependency</string>
 					<string>22.IBPluginDependency</string>
-					<string>23.IBPluginDependency</string>
+					<string>25.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 				</object>
@@ -333,7 +332,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">24</int>
+			<int key="maxID">25</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -444,7 +443,7 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>BKG_x1.png</string>
 				<string>BUTTON_RECORD_x1.png</string>
-				<string>TEXT_MakeARuckus_x1.png</string>
+				<string>TEXT_MakeSomeNoise_x1.png</string>
 				<string>head.png</string>
 				<string>head_increase.png</string>
 				<string>recording1_x1.png</string>
@@ -453,7 +452,7 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{320, 480}</string>
 				<string>{199, 42}</string>
-				<string>{139, 23}</string>
+				<string>{159, 23}</string>
 				<string>{320, 50}</string>
 				<string>{178, 23}</string>
 				<string>{48, 50}</string>

@@ -1,16 +1,16 @@
 //
-//  spirit.m
+//  choose.m
 //  ruckus
 //
-//  Created by Anna Billstrom on 6/23/12.
+//  Created by Anna Billstrom on 6/24/12.
 //  Copyright 2012 Momentus Media. All rights reserved.
 //
 
-#import "spirit.h"
-#import "ruckusAppDelegate.h"
 #import "choose.h"
+#import "shout.h"
+#import "ruckusAppDelegate.h"
 
-@implementation spirit
+@implementation choose
 @synthesize head;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -22,10 +22,10 @@
     return self;
 }
 
--(IBAction)viewChoose{
-    choose *cvc = [[choose alloc] initWithNibName:@"choose" bundle:nil];
-    [[self navigationController] pushViewController:cvc animated:YES];
-    [cvc release];
+-(IBAction)viewShout{
+    shout *svc = [[shout alloc] initWithNibName:@"shout" bundle:nil];
+    [[self navigationController] pushViewController:svc animated:YES];
+    [svc release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,27 +36,13 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-    NSLog(@"view did appear");
-    [self performSelector:@selector(hideNavBar) withObject:nil afterDelay:0.0];
-    
-}
-
--(void) hideNavBar {
-    if (self.navigationController.navigationBar.hidden == NO)
-    {
-        [self.navigationController setNavigationBarHidden:YES animated:YES];
-    }
-}
-
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
     self.head.image = app.selectedHead;
-    
+    [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
 
