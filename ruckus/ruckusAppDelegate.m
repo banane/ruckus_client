@@ -16,7 +16,7 @@
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
-@synthesize uid,reactionsDict,team,currDate,topReactionsDict,selectedHead,gameDict,inning,facebook;
+@synthesize uid,reactionsDict,team,currDate,topReactionsDict,selectedHead,gameDict,inning,facebook,totalDecibels,reaction_id;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -101,13 +101,14 @@
 
 }
 
--(void)doUpVotePost:(NSString *)reaction_id{
+-(void)doUpVotePost{
     ///<date>/<team>/reaction_id/upvote?intensity=10&user_id=1231321321321
     
     NSLog(@"the reaction_id: %@",reaction_id);
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/%@/%@/upvote?intensity=10&user_id=%@",HEROKU_URL,self.currDate, self.team,reaction_id, self.uid ]];
-    
+//    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/%@/%@/upvote?intensity=10&user_id=%@",HEROKU_URL,self.currDate, self.team,reaction_id, self.uid ]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/%@/%@/upvote?intensity=%d&user_id=%@",HEROKU_URL,self.currDate, self.team,self.reaction_id, totalDecibels, @"demo" ]];
+  
     
     NSLog(@"the url: %@",url);
     
@@ -209,6 +210,7 @@
 
 -(void)doOpenGraphPush{
 //     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/%@/gameinfo/",HEROKU_URL,self.currDate, self.team]];
+      NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
     
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/me/appruckus:make?ruckus=&access_token=%@",[facebook accessToken]]];
@@ -222,6 +224,7 @@
     [request setHTTPMethod:@"POST"]; 
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
                   /* ignore response */
+    [pool release];
 }
 
 - (void)dealloc

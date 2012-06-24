@@ -19,6 +19,8 @@
     NSDictionary *gameDict;
     NSString *inning;
     Facebook *facebook;
+    int totalDecibels;
+    NSString *reaction_id;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -34,10 +36,12 @@
 @property (nonatomic, retain) NSDictionary *gameDict;
 @property (nonatomic, retain) NSString *inning;
 @property (nonatomic, retain) Facebook *facebook;
+@property (nonatomic) int totalDecibels;
+@property (nonatomic, retain) NSString *reaction_id;
 
 -(void)doShoutUpload:(NSString *)shoutString;
 -(void)getReactionsLurk;
--(void)doUpVotePost:(NSString *)reaction_id;
+-(void)doUpVotePost;
 -(void)getTopReactions;
 -(void)getGameInfo;
     

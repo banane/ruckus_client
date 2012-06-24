@@ -26,6 +26,11 @@
     choose *cvc = [[choose alloc] initWithNibName:@"choose" bundle:nil];
     [[self navigationController] pushViewController:cvc animated:YES];
     [cvc release];
+    /* 
+     UINavigationController *navController = self.navigationController;
+     [navController popViewControllerAnimated:NO];
+     [navController popViewControllerAnimated:YES];
+     */
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,13 +8,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "ruckus/RootViewController.m"
-         timestampString = "362251659.81736"
+         filePath = "ruckus/ruckusAppDelegate.m"
+         timestampString = "362270770.883256"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "149"
-         endingLineNumber = "149"
-         landmarkName = "-timerTask"
+         startingLineNumber = "104"
+         endingLineNumber = "104"
+         landmarkName = "-doUpVotePost"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -22,13 +22,41 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "ruckus/gameInfo.m"
-         timestampString = "362260099.509992"
+         filePath = "ruckus/ruckusAppDelegate.m"
+         timestampString = "362270772.214108"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "45"
-         endingLineNumber = "45"
-         landmarkName = "-viewDidLoad"
+         startingLineNumber = "123"
+         endingLineNumber = "123"
+         landmarkName = "-doUpVotePost"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ruckus/ruckusAppDelegate.m"
+         timestampString = "362270775.089188"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "113"
+         endingLineNumber = "113"
+         landmarkName = "-doUpVotePost"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ruckus/ruckusAppDelegate.m"
+         timestampString = "362273321.930778"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "110"
+         endingLineNumber = "110"
+         landmarkName = "-doUpVotePost"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

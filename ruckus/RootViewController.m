@@ -68,6 +68,15 @@
 }
 
 -(IBAction)submitWeight{
+    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+    if(self.totalDecibels > 2000){
+        app.totalDecibels = self.totalDecibels - 2000;
+    } else {
+        app.totalDecibels = 0;
+    }
+    [app doUpVotePost];
+    [app getTopReactions];
+    
     topShoutsAll *tsa = [[topShoutsAll alloc] initWithNibName:@"topShoutsAll" bundle:nil];
     [[self navigationController] pushViewController:tsa animated:YES];
     [tsa release];
@@ -123,23 +132,34 @@
     float level = [audioRecorder peakPowerForChannel:0];
     
     level += 160;
-//    NSLog(@"level: %f",level);
-    float db;
+    NSLog(@"level: %f",level);
+    float db = 0.0;
     if(level > 0){
     
         db = log10(level);
+        db -= 2;
+        if(db > 0){
+            db = db  * 1000;
+        }
     } else {
         db = 0;
     }
-//    NSLog(@"db: %f",db);
+    NSLog(@"db: %f",db);
+    
+    
     
     
     /* show correct image */
-    int image_num = lroundf(db *2);
-//    NSLog(@"image_num %d",image_num);
-
+    int max = 2041;
+    int tmp_db = db -100;
+    int image_num = 0;
     
-//    NSLog(@"d: %d",image_num);
+    if(tmp_db > 0){
+        image_num = lroundf(tmp_db/32);
+    }
+
+    NSLog(@"image_num %d",image_num);
+    
     if(image_num > 3){
         image_num = 3;
     }
@@ -150,8 +170,8 @@
     
     /* add to total */
     totalDecibels += db;
-
- //   NSLog(@"%f", db);
+    NSLog(@"total dec: %d", totalDecibels);
+    NSLog(@"end of this cycle");
 
     if(!audioRecorder.recording)
     {

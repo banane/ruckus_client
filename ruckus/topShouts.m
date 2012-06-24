@@ -41,7 +41,8 @@
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
     NSString *reaction_obj_name = [NSString stringWithFormat:@"reaction%d",nameindex];
     NSString *reaction_id = [[app.reactionsDict objectForKey:reaction_obj_name] objectForKey:@"reaction_id"];
-    [app doUpVotePost:reaction_id];
+    app.reaction_id = reaction_id;
+    // do vote after next screen, get volume
     [self doneLeader];
     
 }
