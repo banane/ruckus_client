@@ -43,8 +43,14 @@
 
     // set skins
     /// change before going live
-    NSArray *teams = [[NSArray alloc] initWithObjects:@"chn",@"ari",nil];
+    NSArray *teams = [[NSArray alloc] initWithObjects:@"nyn",@"nya",nil];
     app.team = [teams objectAtIndex:[sender tag]];
+    if([app.team isEqualToString:@"nyn"]){
+        app.selectedHead = [UIImage imageNamed:@"mets_head.png"];
+    }
+    if([app.team isEqualToString:@"nya"]){
+        app.selectedHead = [UIImage imageNamed:@"yankees_head.png"];
+    }
     
     shout *sh = [[shout alloc] initWithNibName:@"shout" bundle:nil];
     [[self navigationController] pushViewController:sh animated:YES];

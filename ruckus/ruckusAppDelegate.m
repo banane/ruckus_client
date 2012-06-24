@@ -16,7 +16,7 @@
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
-@synthesize uid,reactionsDict,team,currDate,topReactionsDict;
+@synthesize uid,reactionsDict,team,currDate,topReactionsDict,selectedHead;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -184,6 +184,7 @@
     [currDate release];
     [reactionsDict release];
     [topReactionsDict release];
+    [selectedHead release];
     [super dealloc];
 }
 

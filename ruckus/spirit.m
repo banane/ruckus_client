@@ -7,8 +7,10 @@
 //
 
 #import "spirit.h"
+#import "ruckusAppDelegate.h"
 
 @implementation spirit
+@synthesize head;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +34,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.head.image = app.selectedHead;
+    
     // Do any additional setup after loading the view from its nib.
 }
 

@@ -12,7 +12,7 @@
 #import "ruckusAppDelegate.h"
 
 @implementation shout
-@synthesize tf;
+@synthesize tf,head,gameInfoTV;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -69,6 +69,10 @@
 
 - (void)viewDidLoad
 {
+    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+    // get gameinfo from Kelsey
+
+    head.image = app.selectedHead;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

@@ -8,6 +8,10 @@
 
 
 
-@interface spirit : UIViewController
+@interface spirit : UIViewController {
+    IBOutlet UIImageView *head;
+
+}
+@property (nonatomic, retain)     IBOutlet UIImageView *head;
 
 @end

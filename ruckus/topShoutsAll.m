@@ -11,7 +11,7 @@
 
 @implementation topShoutsAll
 
-@synthesize reaction1,reaction2,reaction3;
+@synthesize reaction1,reaction2,reaction3,head;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +35,7 @@
 - (void)viewDidLoad
 {
     ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.head.image = app.selectedHead;
     
     reaction1.text = [[app.topReactionsDict objectForKey:@"reaction1"] objectForKey:@"content"];
     reaction2.text = [[app.topReactionsDict objectForKey:@"reaction2"] objectForKey:@"content"];
@@ -60,6 +61,7 @@
     [reaction1 release];
     [reaction2 release];
     [reaction3 release];
+    [head release];
 }
 
 @end

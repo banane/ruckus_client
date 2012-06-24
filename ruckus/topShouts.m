@@ -12,7 +12,7 @@
 
 @implementation topShouts
 
-@synthesize reaction1,reaction2,reaction3;
+@synthesize reaction1,reaction2,reaction3,head;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +29,7 @@
     NSString *reaction_obj_name = [NSString stringWithFormat:@"reaction%d",nameindex];
     NSString *reaction_id = [[app.reactionsDict objectForKey:reaction_obj_name] objectForKey:@"reaction_id"];
     [app doUpVotePost:reaction_id];
+    [self doneLeader];
     
 }
 
@@ -55,6 +56,8 @@
     reaction2.text = [[app.reactionsDict objectForKey:@"reaction2"] objectForKey:@"content"];
     reaction3.text = [[app.reactionsDict objectForKey:@"reaction3"] objectForKey:@"content"];
     
+    self.head.image = app.selectedHead;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -76,6 +79,7 @@
     [reaction1 release];
     [reaction2 release];
     [reaction3 release];
+    [head release];
     [super release];
     
 }

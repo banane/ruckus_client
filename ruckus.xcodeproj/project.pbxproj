@@ -30,6 +30,27 @@
 		ED2EE4F51596AA8B0055206F /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4F41596AA8B0055206F /* JSONKit.m */; };
 		ED2EE4F91596C82E0055206F /* topShoutsAll.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2EE4F71596C82D0055206F /* topShoutsAll.m */; };
 		ED2EE4FA1596C82E0055206F /* topShoutsAll.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4F81596C82E0055206F /* topShoutsAll.xib */; };
+		ED2EE4FD1596D0180055206F /* SPLASH_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4FB1596D0170055206F /* SPLASH_x1.png */; };
+		ED2EE4FE1596D0180055206F /* SPLASH_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4FC1596D0170055206F /* SPLASH_x2.png */; };
+		ED2EE5001596D0420055206F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE4FF1596D0420055206F /* Default.png */; };
+		ED2EE5021596D04A0055206F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE5011596D0490055206F /* Default@2x.png */; };
+		ED2EE5411596D3580055206F /* BKG_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE5401596D3580055206F /* BKG_x1.png */; };
+		ED2EE5441596D4A20055206F /* mets_head.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE5421596D4A20055206F /* mets_head.png */; };
+		ED2EE5451596D4A20055206F /* yankees_head.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE5431596D4A20055206F /* yankees_head.png */; };
+		ED2EE5471596D4EA0055206F /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE5461596D4EA0055206F /* head.png */; };
+		ED2EE5491596D6660055206F /* BKG_SCR1_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE5481596D6660055206F /* BKG_SCR1_x1.png */; };
+		ED2EE54B1596D69D0055206F /* mets_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE54A1596D69D0055206F /* mets_btn.png */; };
+		ED2EE54D1596D6A50055206F /* yankees_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE54C1596D6A50055206F /* yankees_btn.png */; };
+		ED2EE5501596DD9A0055206F /* As_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE54E1596DD9A0055206F /* As_btn.png */; };
+		ED2EE5511596DD9A0055206F /* giants_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE54F1596DD9A0055206F /* giants_btn.png */; };
+		ED2EE5531596DDF40055206F /* BKG_SCR2_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE5521596DDF40055206F /* BKG_SCR2_x1.png */; };
+		ED2EE5551596DEEF0055206F /* BUTTON_SUBMIT_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE5541596DEEF0055206F /* BUTTON_SUBMIT_x1.png */; };
+		ED2EE5571596DF2F0055206F /* BUTTON_SHARE_BIG_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE5561596DF2E0055206F /* BUTTON_SHARE_BIG_x1.png */; };
+		ED2EE5591596DF450055206F /* BUTTON_SKIP_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE5581596DF450055206F /* BUTTON_SKIP_x1.png */; };
+		ED2EE55B1596E0A30055206F /* BKG_SCR3_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE55A1596E0A30055206F /* BKG_SCR3_x1.png */; };
+		ED2EE55F1596E1340055206F /* BUTTON_FLAG_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE55C1596E1330055206F /* BUTTON_FLAG_x1.png */; };
+		ED2EE5601596E1340055206F /* BUTTON_SHARE_SM_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE55D1596E1340055206F /* BUTTON_SHARE_SM_x1.png */; };
+		ED2EE5611596E1340055206F /* BUTTON_VOTE_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2EE55E1596E1340055206F /* BUTTON_VOTE_x1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +89,27 @@
 		ED2EE4F61596C82D0055206F /* topShoutsAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topShoutsAll.h; sourceTree = "<group>"; };
 		ED2EE4F71596C82D0055206F /* topShoutsAll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topShoutsAll.m; sourceTree = "<group>"; };
 		ED2EE4F81596C82E0055206F /* topShoutsAll.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = topShoutsAll.xib; sourceTree = "<group>"; };
+		ED2EE4FB1596D0170055206F /* SPLASH_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SPLASH_x1.png; sourceTree = "<group>"; };
+		ED2EE4FC1596D0170055206F /* SPLASH_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SPLASH_x2.png; sourceTree = "<group>"; };
+		ED2EE4FF1596D0420055206F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		ED2EE5011596D0490055206F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		ED2EE5401596D3580055206F /* BKG_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_x1.png; sourceTree = "<group>"; };
+		ED2EE5421596D4A20055206F /* mets_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mets_head.png; sourceTree = "<group>"; };
+		ED2EE5431596D4A20055206F /* yankees_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yankees_head.png; sourceTree = "<group>"; };
+		ED2EE5461596D4EA0055206F /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		ED2EE5481596D6660055206F /* BKG_SCR1_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_SCR1_x1.png; sourceTree = "<group>"; };
+		ED2EE54A1596D69D0055206F /* mets_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mets_btn.png; sourceTree = "<group>"; };
+		ED2EE54C1596D6A50055206F /* yankees_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yankees_btn.png; sourceTree = "<group>"; };
+		ED2EE54E1596DD9A0055206F /* As_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = As_btn.png; sourceTree = "<group>"; };
+		ED2EE54F1596DD9A0055206F /* giants_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giants_btn.png; sourceTree = "<group>"; };
+		ED2EE5521596DDF40055206F /* BKG_SCR2_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_SCR2_x1.png; sourceTree = "<group>"; };
+		ED2EE5541596DEEF0055206F /* BUTTON_SUBMIT_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_SUBMIT_x1.png; sourceTree = "<group>"; };
+		ED2EE5561596DF2E0055206F /* BUTTON_SHARE_BIG_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_SHARE_BIG_x1.png; sourceTree = "<group>"; };
+		ED2EE5581596DF450055206F /* BUTTON_SKIP_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_SKIP_x1.png; sourceTree = "<group>"; };
+		ED2EE55A1596E0A30055206F /* BKG_SCR3_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG_SCR3_x1.png; sourceTree = "<group>"; };
+		ED2EE55C1596E1330055206F /* BUTTON_FLAG_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_FLAG_x1.png; sourceTree = "<group>"; };
+		ED2EE55D1596E1340055206F /* BUTTON_SHARE_SM_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_SHARE_SM_x1.png; sourceTree = "<group>"; };
+		ED2EE55E1596E1340055206F /* BUTTON_VOTE_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BUTTON_VOTE_x1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +130,10 @@
 		ED2EE4A5159667470055206F = {
 			isa = PBXGroup;
 			children = (
+				ED2EE5011596D0490055206F /* Default@2x.png */,
+				ED2EE4FF1596D0420055206F /* Default.png */,
+				ED2EE4FB1596D0170055206F /* SPLASH_x1.png */,
+				ED2EE4FC1596D0170055206F /* SPLASH_x2.png */,
 				ED2EE4D41596705E0055206F /* AVFoundation.framework */,
 				ED2EE4BA159667470055206F /* ruckus */,
 				ED2EE4B3159667470055206F /* Frameworks */,
@@ -116,6 +162,7 @@
 		ED2EE4BA159667470055206F /* ruckus */ = {
 			isa = PBXGroup;
 			children = (
+				ED2EE5031596D0610055206F /* assets */,
 				ED2EE4C3159667470055206F /* ruckusAppDelegate.h */,
 				ED2EE4C4159667470055206F /* ruckusAppDelegate.m */,
 				ED2EE4C6159667470055206F /* MainWindow.xib */,
@@ -156,6 +203,30 @@
 				ED2EE4C2159667470055206F /* ruckus-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED2EE5031596D0610055206F /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				ED2EE55C1596E1330055206F /* BUTTON_FLAG_x1.png */,
+				ED2EE55D1596E1340055206F /* BUTTON_SHARE_SM_x1.png */,
+				ED2EE55E1596E1340055206F /* BUTTON_VOTE_x1.png */,
+				ED2EE55A1596E0A30055206F /* BKG_SCR3_x1.png */,
+				ED2EE5521596DDF40055206F /* BKG_SCR2_x1.png */,
+				ED2EE5541596DEEF0055206F /* BUTTON_SUBMIT_x1.png */,
+				ED2EE5581596DF450055206F /* BUTTON_SKIP_x1.png */,
+				ED2EE5561596DF2E0055206F /* BUTTON_SHARE_BIG_x1.png */,
+				ED2EE54E1596DD9A0055206F /* As_btn.png */,
+				ED2EE54F1596DD9A0055206F /* giants_btn.png */,
+				ED2EE54A1596D69D0055206F /* mets_btn.png */,
+				ED2EE54C1596D6A50055206F /* yankees_btn.png */,
+				ED2EE5481596D6660055206F /* BKG_SCR1_x1.png */,
+				ED2EE5461596D4EA0055206F /* head.png */,
+				ED2EE5421596D4A20055206F /* mets_head.png */,
+				ED2EE5431596D4A20055206F /* yankees_head.png */,
+				ED2EE5401596D3580055206F /* BKG_x1.png */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +288,27 @@
 				ED2EE4ED1596909C0055206F /* thanks.xib in Resources */,
 				ED2EE4F2159690D90055206F /* spirit.xib in Resources */,
 				ED2EE4FA1596C82E0055206F /* topShoutsAll.xib in Resources */,
+				ED2EE4FD1596D0180055206F /* SPLASH_x1.png in Resources */,
+				ED2EE4FE1596D0180055206F /* SPLASH_x2.png in Resources */,
+				ED2EE5001596D0420055206F /* Default.png in Resources */,
+				ED2EE5021596D04A0055206F /* Default@2x.png in Resources */,
+				ED2EE5411596D3580055206F /* BKG_x1.png in Resources */,
+				ED2EE5441596D4A20055206F /* mets_head.png in Resources */,
+				ED2EE5451596D4A20055206F /* yankees_head.png in Resources */,
+				ED2EE5471596D4EA0055206F /* head.png in Resources */,
+				ED2EE5491596D6660055206F /* BKG_SCR1_x1.png in Resources */,
+				ED2EE54B1596D69D0055206F /* mets_btn.png in Resources */,
+				ED2EE54D1596D6A50055206F /* yankees_btn.png in Resources */,
+				ED2EE5501596DD9A0055206F /* As_btn.png in Resources */,
+				ED2EE5511596DD9A0055206F /* giants_btn.png in Resources */,
+				ED2EE5531596DDF40055206F /* BKG_SCR2_x1.png in Resources */,
+				ED2EE5551596DEEF0055206F /* BUTTON_SUBMIT_x1.png in Resources */,
+				ED2EE5571596DF2F0055206F /* BUTTON_SHARE_BIG_x1.png in Resources */,
+				ED2EE5591596DF450055206F /* BUTTON_SKIP_x1.png in Resources */,
+				ED2EE55B1596E0A30055206F /* BKG_SCR3_x1.png in Resources */,
+				ED2EE55F1596E1340055206F /* BUTTON_FLAG_x1.png in Resources */,
+				ED2EE5601596E1340055206F /* BUTTON_SHARE_SM_x1.png in Resources */,
+				ED2EE5611596E1340055206F /* BUTTON_VOTE_x1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

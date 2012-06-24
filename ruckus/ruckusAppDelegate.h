@@ -14,6 +14,7 @@
     NSDictionary *reactionsDict;
     NSString *team;
     NSDictionary *topReactionsDict;
+    UIImage *selectedHead;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -25,6 +26,7 @@
 @property (nonatomic, retain) NSDictionary *reactionsDict;
 @property (nonatomic, retain) NSString *team;
 @property (nonatomic, retain) NSDictionary *topReactionsDict;
+@property (nonatomic, retain) UIImage *selectedHead;
 
 -(void)doShoutUpload:(NSString *)shoutString;
 -(void)getReactionsLurk;

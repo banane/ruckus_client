@@ -8,7 +8,11 @@
 
 
 
-@interface thanks : UIViewController
+@interface thanks : UIViewController {
+    IBOutlet UIImageView *head;
+}
+@property (nonatomic, retain)    IBOutlet UIImageView *head;
+
 
 -(IBAction)viewSpirit;
 

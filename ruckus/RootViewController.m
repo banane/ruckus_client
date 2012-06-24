@@ -8,16 +8,20 @@
 
 #import "RootViewController.h"
 #import "topShoutsAll.h"
+#import "ruckusAppDelegate.h"
 
 #define TOTALDURATION 3
 
 @implementation RootViewController
 
-@synthesize decibelLevel,rBtn,totalDecibels;
+@synthesize decibelLevel,rBtn,totalDecibels,head;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    ruckusAppDelegate *app = (ruckusAppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.head.image = app.selectedHead;
     
     totalDecibels = 0;
     
@@ -144,6 +148,7 @@
 {
     [decibelLevel release];
     [rBtn release];
+    [head release];
     [super dealloc];
 }
 
